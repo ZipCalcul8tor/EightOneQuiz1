@@ -1,28 +1,36 @@
- 
 
-public class LoopFun
-{
 
-      /**
-       * Given a number, return the factorial of that number.
-       * For example, given 5, the factorial is 5 x 4 x 3 x 2 x 1 which should return 120.
-       * @param number
-       * @return the factorial of the number
-       */
-      public Integer factorial(Integer number){
-          return null;
-      }
+public class LoopFun{
+    public static  int factorial (int n) {
+        if (n == 0) {
+            return 1;
+        }
+        int recurse = factorial (n-1);
+        int result = n * recurse;
+        return result;
 
-      /**
-       * Given a phrase, get the acronym of that phrase. Acronym is the combination of
-       * the first character of each word in upper case.
-       * For example, given "Ruby on Rails", this method will return "ROR"
-       * @param phrase
-       * @return Upper case string of the first letter of each word
-       */
-      public String acronym(String phrase) {
-          return null;
-      }
+    }
+
+//      /**
+//       * Given a number, return the factorial of that number.
+//       * For example, given 5, the factorial is 5 x 4 x 3 x 2 x 1 which should return 120.
+//       * @param number
+//       * @return the factorial of the number
+//       */
+//      public Integer factorial(Integer num1){
+//          return null;
+//      }
+//
+//      /**
+//       * Given a phrase, get the acronym of that phrase. Acronym is the combination of
+//       * the first character of each word in upper case.
+//       * For example, given "Ruby on Rails", this method will return "ROR"
+//       * @param phrase
+//       * @return Upper case string of the first letter of each word
+//       */
+//      public String acronym(String phrase) {
+//          return null;
+//      }
 
       /**
        * To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
