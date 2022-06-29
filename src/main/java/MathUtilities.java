@@ -9,12 +9,25 @@ public class MathUtilities {
         int num2 = input.nextInt();
         int sum = num1 + num2;
         System.out.println("Sum is " + sum);
+        System.out.println("Enter the third number ");
+        double num3 = input.nextDouble();
+        System.out.println("Enter the fourth number ");
+        double num4 = input.nextDouble();
+        double sum1 = num3 + num4;
+        System.out.println("Double(sum) is" + sum1);
+
+
+
     }
+
+
+
+
 }
 
 
 
-        /**
+//        /**
 //         * Add two number together
 //         * @param baseValue first number
 //         * @param valueToAdd number
