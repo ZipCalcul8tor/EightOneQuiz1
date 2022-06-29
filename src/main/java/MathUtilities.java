@@ -15,15 +15,23 @@ public class MathUtilities {
         double num4 = input.nextDouble();
         double sum1 = num3 + num4;
         System.out.println("Double(sum) is" + sum1);
+        double half = num1 / 2;
+        System.out.println("Half of a no." + half);
+        if (num1 % 2 == 0) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
 
-
-
+        }
+        double square = Math.pow(num1,2);
+        System.out.println("The square is " + square);
     }
-
-
-
-
 }
+
+
+
+
+
 
 
 
