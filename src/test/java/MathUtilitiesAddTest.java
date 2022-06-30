@@ -8,6 +8,7 @@ import org.junit.Test;
 public class MathUtilitiesAddTest
 {
     private MathUtilities utilities;
+    Result result;
     private static final double DELTA = 0.009;
 
     @Before
@@ -18,13 +19,15 @@ public class MathUtilitiesAddTest
     @Test
     public void testAddInteger(){
         //Given
-        int expected = 15;
+        int sum = 15;
 
         //When
-        int actual = utilities.add(7, 8);
+//        int actual = result.sum(7, 8);
+        int actual;
+        actual = utilities.sum(7,8);
 
         //Then
-        assertEquals(expected, actual);
+        assertEquals(actual,sum);
     }
 
     @Test
@@ -33,7 +36,7 @@ public class MathUtilitiesAddTest
         double expected = 11.22;
 
         //When
-        double actual = utilities.add(10.0, 1.22);
+        double actual = Result.add(10.0, 1.22);
 
         //Then
         assertEquals(expected, actual, DELTA);
