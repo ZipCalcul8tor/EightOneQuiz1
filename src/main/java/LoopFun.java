@@ -1,12 +1,23 @@
-
+import java.util.Scanner;
 
 public class LoopFun{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the first number ");
+        int num1 = input.nextInt();
+        System.out.println(factorial(num1));
+    }
     public static  int factorial (int n) {
+        int result=1;
         if (n == 0) {
             return 1;
         }
-        int recurse = factorial (n-1);
-        int result = n * recurse;
+
+        int i;
+
+        for(i=1; i<=n;i++){
+            result=result*i;
+        }
         return result;
 
     }
